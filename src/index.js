@@ -11,7 +11,23 @@ const {
   PORT: port,
 } = process.env;
 
-const scopes = ['user-read-playback-state user-read-currently-playing'];
+const scopes = [
+  'user-read-private',
+  'user-read-email',
+  'user-read-playback-state',
+  'user-read-currently-playing',
+  'user-read-playback-position',
+  'user-top-read',
+  'user-read-recently-played',
+  'playlist-read-private',
+  'playlist-read-collaborative',
+  'playlist-modify-public',
+  'playlist-modify-private',
+  'user-library-read',
+  'user-library-modify',
+  'user-follow-read',
+  'user-follow-modify',
+];
 
 const host = 'localhost';
 
